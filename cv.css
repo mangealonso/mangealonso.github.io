@@ -121,3 +121,7 @@ em{
     font-style: bold;
     color: rgb(163, 157, 157);
 }
+
+address{
+    font-style: normal;
+}
