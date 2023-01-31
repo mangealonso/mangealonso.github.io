@@ -1,0 +1,123 @@
+* {  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    background-color: bisque;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img{    
+    width: 100%;
+}
+
+header, main, section, footer{
+    margin: 10px;
+    padding: 10px;
+}
+
+header, main{    
+    border-bottom: 2px solid burlywood;
+}
+
+h1, h2{
+    text-align: center;
+    font-weight: lighter;
+}
+
+h1{
+    font-style: italic;
+}
+
+h2{
+    margin-bottom: 1rem;
+}
+
+p{
+    font-size: 1.1rem;;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+body{
+    display: grid;
+    grid-template: 
+    "a"
+    "b"
+    "c";
+}
+
+header{ grid-area: a; }
+main{ grid-area: b; }
+footer{ grid-area: c; }
+
+header{
+    display:grid;
+}
+
+main{
+    display: grid;
+    grid-template: 
+    "a b b b"
+    "c c d d" / 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 800px){
+    main{
+        display: grid;
+        grid-template: 
+        "a"
+        "b"
+        "c"
+        "d";
+    }
+}
+
+#photo{
+    grid-area: a;
+    grid-template-rows: 200px;     
+}
+
+#resume{
+    grid-area: b;
+    grid-template-rows: 200px;
+}
+
+#movies{
+    grid-area: c;
+    grid-template-rows: 250px;
+}
+
+#awards{
+    grid-area: d;    
+    grid-template-rows: 250px;
+}
+
+#footer{
+    display: grid;
+    grid-area: c;
+    text-align: center;
+    grid-template-rows: 1fr;
+    margin: 10px;
+    padding: 10px;
+}
+
+ol{
+    list-style:square;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+em{
+    font-style: italic;
+}
+
+.winner{
+    font-style: bold;
+    color: rgb(198, 170, 11);
+}
+
+.nominee{
+    font-style: bold;
+    color: rgb(163, 157, 157);
+}
