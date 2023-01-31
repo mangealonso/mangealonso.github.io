@@ -2,16 +2,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
-    background-color: bisque;
+}
+
+html{
+    background-color: bisque;    
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 img{    
     width: 100%;
+    min-width: 300px;
 }
 
-header, main, section, footer{
+header, main, section{
     margin: 10px;
     padding: 10px;
 }
@@ -63,6 +66,9 @@ main{
 }
 
 @media (max-width: 800px){
+    #photo{
+       max-width: 400px;
+    }
     main{
         display: grid;
         grid-template: 
@@ -75,22 +81,20 @@ main{
 
 #photo{
     grid-area: a;
-    grid-template-rows: 200px;     
+    border-bottom: 2px solid burlywood;     
 }
 
 #resume{
     grid-area: b;
-    grid-template-rows: 200px;
+    border-bottom: 2px solid burlywood;
 }
 
 #movies{
     grid-area: c;
-    grid-template-rows: 250px;
 }
 
 #awards{
-    grid-area: d;    
-    grid-template-rows: 250px;
+    grid-area: d;
 }
 
 #footer{
@@ -98,11 +102,9 @@ main{
     grid-area: c;
     text-align: center;
     grid-template-rows: 1fr;
-    margin: 10px;
-    padding: 10px;
 }
 
-ol{
+ul{
     list-style:square;
     font-size: 1rem;
     line-height: 1.3rem;
