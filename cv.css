@@ -9,9 +9,11 @@ html{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+
+
 img{    
     width: 100%;
-    min-width: 300px;
+    min-width: 400px;
 }
 
 header, main, section{
@@ -21,6 +23,13 @@ header, main, section{
 
 header, main{    
     border-bottom: 2px solid burlywood;
+}
+
+body{
+    background-color:cornsilk;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1, h2{
@@ -69,6 +78,9 @@ main{
     #photo{
        max-width: 400px;
     }
+    html{
+        background-color: bisque;
+    }
     main{
         display: grid;
         grid-template: 
@@ -80,13 +92,11 @@ main{
 }
 
 #photo{
-    grid-area: a;
-    border-bottom: 2px solid burlywood;     
+    grid-area: a;    
 }
 
 #resume{
     grid-area: b;
-    border-bottom: 2px solid burlywood;
 }
 
 #movies{
