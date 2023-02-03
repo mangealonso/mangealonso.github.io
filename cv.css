@@ -4,27 +4,15 @@
     padding: 0;
 }
 
+
+/*html*/
 html{
     background-color: bisque;    
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
-
-img{    
-    width: 100%;
-    min-width: 400px;
-}
-
-header, main, section{
-    margin: 10px;
-    padding: 10px;
-}
-
-header, main{    
-    border-bottom: 2px solid burlywood;
-}
-
+/*body*/
 body{
     background-color:cornsilk;
     max-width: 80rem;
@@ -32,6 +20,54 @@ body{
     margin-right: auto;
 }
 
+header, main{
+    margin: 10px;
+    padding: 10px;    
+    border-bottom: 2px solid burlywood;
+}
+
+
+/*main*/
+section{  
+    margin: 10px;
+    padding: 10px;  
+}
+
+#resume p{
+    font-size: 1.1rem;;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+ul{
+    list-style:square;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+em{
+    font-style: italic;
+}
+
+.winner{
+    font-style: bold;
+    color: rgb(198, 170, 11);
+}
+
+.nominee{
+    font-style: bold;
+    color: rgb(163, 157, 157);
+}
+
+
+/*footer*/
+address{
+    font-style: normal;    
+    text-align: center;
+}
+
+
+/*headlines*/
 h1, h2{
     text-align: center;
     font-weight: lighter;
@@ -45,12 +81,15 @@ h2{
     margin-bottom: 1rem;
 }
 
-#resume p{
-    font-size: 1.1rem;;
-    line-height: 1.5;
-    margin-bottom: 1rem;
+
+/*images*/
+img{    
+    width: 100%;
+    min-width: 400px;
 }
 
+
+/*grid*/
 body{
     display: grid;
     grid-template: 
@@ -74,23 +113,6 @@ main{
     "c c d d" / 1fr 1fr 1fr 1fr;
 }
 
-@media (max-width: 800px){
-    #photo{
-       max-width: 400px;
-    }
-    html{
-        background-color: bisque;
-    }
-    main{
-        display: grid;
-        grid-template: 
-        "a"
-        "b"
-        "c"
-        "d";
-    }
-}
-
 #photo{
     grid-area: a;    
 }
@@ -109,31 +131,23 @@ main{
 
 #footer{
     display: grid;
-    grid-area: c;
-    text-align: center;
-    grid-template-rows: 1fr;
 }
 
-ul{
-    list-style:square;
-    font-size: 1rem;
-    line-height: 1.3rem;
-}
 
-em{
-    font-style: italic;
-}
-
-.winner{
-    font-style: bold;
-    color: rgb(198, 170, 11);
-}
-
-.nominee{
-    font-style: bold;
-    color: rgb(163, 157, 157);
-}
-
-address{
-    font-style: normal;
+/*media query*/
+@media (max-width: 800px){
+    #photo{
+       max-width: 400px;
+    }
+    html{
+        background-color: cornsilk;
+    }
+    main{
+        display: grid;
+        grid-template: 
+        "a"
+        "b"
+        "c"
+        "d";
+    }
 }
