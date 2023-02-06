@@ -1,4 +1,4 @@
-* {  
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -6,148 +6,161 @@
 
 
 /*html*/
-html{
-    background-color: bisque;    
+html {
+    background-color: bisque;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
 /*body*/
-body{
-    background-color:cornsilk;
+body {
+    background-color: cornsilk;
     max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-header, main{
+header,
+main {
     margin: 10px;
-    padding: 10px;    
+    padding: 10px;
     border-bottom: 2px solid burlywood;
 }
 
 
 /*main*/
-section{  
+section {
     margin: 10px;
-    padding: 10px;  
+    padding: 10px;
 }
 
-#resume p{
-    font-size: 1.1rem;;
+#resume p {
+    font-size: 1.1rem;
+    ;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
 
-ul{
-    list-style:square;
+ul {
+    list-style: square;
     font-size: 1rem;
     line-height: 1.3rem;
 }
 
-em{
+em {
     font-style: italic;
 }
 
-.winner{
+.winner {
     font-style: bold;
     color: rgb(198, 170, 11);
 }
 
-.nominee{
+.nominee {
     font-style: bold;
     color: rgb(163, 157, 157);
 }
 
 
 /*footer*/
-address{
-    font-style: normal;    
+address {
+    font-style: normal;
     text-align: center;
 }
 
 
 /*headlines*/
-h1, h2{
+h1,
+h2 {
     text-align: center;
     font-weight: lighter;
 }
 
-h1{
+h1 {
     font-style: italic;
 }
 
-h2{
+h2 {
     margin-bottom: 1rem;
 }
 
 
 /*images*/
-img{    
+img {
     width: 100%;
     min-width: 400px;
 }
 
 
 /*grid*/
-body{
+body {
     display: grid;
-    grid-template: 
-    "a"
-    "b"
-    "c";
+    grid-template:
+        "a"
+        "b"
+        "c";
 }
 
-header{ grid-area: a; }
-main{ grid-area: b; }
-footer{ grid-area: c; }
-
-header{
-    display:grid;
+header {
+    grid-area: a;
 }
 
-main{
-    display: grid;
-    grid-template: 
-    "a b b b"
-    "c c d d" / 1fr 1fr 1fr 1fr;
-}
-
-#photo{
-    grid-area: a;    
-}
-
-#resume{
+main {
     grid-area: b;
 }
 
-#movies{
+footer {
     grid-area: c;
 }
 
-#awards{
+header {
+    display: grid;
+}
+
+main {
+    display: grid;
+    grid-template:
+        "a b b b"
+        "c c d d" / 1fr 1fr 1fr 1fr;
+}
+
+#photo {
+    grid-area: a;
+}
+
+#resume {
+    grid-area: b;
+}
+
+#movies {
+    grid-area: c;
+}
+
+#awards {
     grid-area: d;
 }
 
-#footer{
+#footer {
     display: grid;
 }
 
 
 /*media query*/
-@media (max-width: 800px){
-    #photo{
-       max-width: 400px;
+@media (max-width: 800px) {
+    #photo {
+        max-width: 400px;
     }
-    html{
+
+    html {
         background-color: cornsilk;
     }
-    main{
+
+    main {
         display: grid;
-        grid-template: 
-        "a"
-        "b"
-        "c"
-        "d";
+        grid-template:
+            "a"
+            "b"
+            "c"
+            "d";
     }
 }
